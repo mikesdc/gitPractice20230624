@@ -1,0 +1,158 @@
+@use "./partials/colors";
+@import "./partials/global";
+
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.hero-bar--image-div {
+  background-image: url(../assets/images/coffee-circle.jpg);
+  background-color: colors.$white;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 31.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.hero-bar__menu-box {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-bar__menu-box--blue-box {
+  background-color: transparent;
+  width: 14.5rem;
+  height: 9.5rem;
+  border: 0.25rem solid colors.$nitroblue;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.hero-bar__menu-box--menu {
+  color: colors.$white;
+  margin: 0;
+  font-size: 3.1rem;
+  font-weight: 300;
+}
+
+.hero-bar__menu-box--graphite-box {
+  background-color: colors.$graphite;
+  width: 14.5rem;
+  height: 9.5rem;
+  border: 0.25rem solid transparent;
+  position: absolute;
+  z-index: 0;
+  top: -4.2rem;
+  left: -6.7rem;
+}
+
+.hero-bar--image {
+  width: 100%;
+  height: 31.25rem;
+  padding: 0;
+  display: inline-block;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.page-nav {
+  margin: 0;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 3;
+  background-color: colors.$graphite;
+}
+
+.page-nav li {
+  list-style-type: none;
+}
+
+.page-nav a {
+  padding: 1rem;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: colors.$white;
+}
+
+div.page-nav__separators {
+  display: inline;
+  height: 1.2rem;
+  width: 0.009rem;
+  border: 0.1rem solid colors.$nitroblue;
+  background-color: colors.$nitroblue;
+}
+
+.menu-card {
+  text-align: center;
+}
+
+.menu-card--drink-categories {
+  font-size: 3rem;
+  padding: 1.5rem 0 1.5rem;
+  font-weight: 300;
+}
+
+.menu-card--drink-subcategories {
+  font-weight: 300;
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.pinkCard {
+  background-color: colors.$nitropink;
+}
+
+.grayCard {
+  background-color: colors.$lightgray;
+}
+
+.menu-card__drink-description-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+  margin: 0.5rem 0 0.3rem;
+  text-align: center;
+}
+
+.menu-card--drink-description {
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  width: 34%;
+}
+
+.menu-card--price {
+  color: colors.$nitroblue;
+  text-align: center;
+  padding: 0 0 0.8rem 0;
+  margin: 0;
+}
+
+.menu-card--price:last-of-type {
+  padding-bottom: 2.5rem;
+}

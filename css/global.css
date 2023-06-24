@@ -1,0 +1,86 @@
+html {
+  font-size: 35px;
+  color: #393939;
+}
+
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  background-color: #393939;
+}
+
+.pink-banner {
+  background-color: #fff0ed;
+}
+
+.gray-banner {
+  background-color: #f7f7f7;
+}
+
+/* Top Site Navigation Bar */
+/* START */
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 5.5rem;
+}
+.site-nav--nitro {
+  display: flex;
+  flex-direction: row;
+}
+.site-nav--nitrosite-nav--nitro {
+  height: 7rem;
+}
+.site-nav__coffee-bean-logo--link {
+  padding: 0;
+  margin: 0;
+}
+.site-nav__coffee-bean-logo {
+  width: 3rem;
+  padding: 0.7rem 0 0 0.7rem;
+}
+.site-nav h2 {
+  margin: 0.4em 0;
+}
+
+.top-bar__home-button--h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 3.75rem;
+  font-weight: 300;
+}
+.top-bar__nav-links {
+  display: inline-block;
+  padding: 1.2rem;
+  color: #393939;
+  text-decoration: none;
+}
+.top-bar__nav-links:hover {
+  display: inline;
+  padding: 1.2rem;
+  color: #5bacc3;
+  text-decoration: none;
+}
+.top-bar__home-button--link {
+  color: #393939;
+  font-size: 2.5rem;
+  width: 2rem;
+  text-decoration: none;
+}
+.top-bar__home-button--link:visited {
+  text-decoration: none;
+  color: #393939;
+  font-weight: 300;
+}
+.top-bar__home-button--link:hover {
+  color: #393939;
+  font-weight: 400;
+  letter-spacing: -0.1rem;
+  text-decoration: none;
+}
+
+/* Top Site Navigation Bar */
+/* END *//*# sourceMappingURL=global.css.map */

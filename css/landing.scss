@@ -1,0 +1,367 @@
+@use "./partials/colors";
+@import "./partials/global";
+
+@mixin interactiveButton() {
+  height: 3rem;
+  width: 9rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  cursor: pointer;
+  text-decoration: none;
+  color: colors.$white;
+}
+
+@mixin flexCenter() {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.nitro-banner {
+  @include flexCenter();
+  height: 42rem;
+  position: static;
+  gap: 15rem;
+  justify-content: space-evenly;
+
+  &--header {
+    padding: 0;
+    margin: 0;
+    font-size: 3.75rem;
+    font-weight: 300;
+  }
+
+  &--description {
+    width: 22rem;
+    text-align: left;
+    z-index: 2;
+  }
+
+  &__image--img {
+    width: 17rem;
+  }
+}
+
+.button-container {
+  position: relative;
+}
+
+@mixin interactiveButton() {
+  height: 3rem;
+  width: 9rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  cursor: pointer;
+  text-decoration: none;
+  color: colors.$white;
+}
+
+.interactive-button {
+  @include interactiveButton();
+  @include flexCenter();
+  background-color: transparent;
+  border: 0.12rem solid colors.$graphite;
+  position: relative;
+  z-index: 5;
+
+  &:active {
+    top: 0.25rem;
+    left: 0.25rem;
+  }
+
+  &--background {
+    @include interactiveButton();
+    background-color: colors.$nitroblue;
+    border: 0.12rem solid colors.$nitroblue;
+    position: absolute;
+    z-index: 2;
+    top: 0.25rem;
+    left: 0.25rem;
+  }
+}
+
+.interactive-link {
+  color: colors.$white;
+  text-decoration: none;
+}
+
+.products-section {
+  &__cards--card-price {
+    @include flexCenter();
+  }
+  &__card-price--p {
+    @include flexCenter();
+    font-size: 2em;
+    font-weight: 800;
+    color: colors.$nitroblue;
+    width: 4rem;
+  }
+  &--h2 {
+    margin: 0;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 300;
+    padding: 3rem 0 1rem;
+  }
+  &__cards {
+    @include flexCenter();
+    width: 100%;
+    overflow: auto;
+    gap: 2rem;
+  }
+
+  &__card1,
+  &__card2,
+  &__card3 {
+    @include flexCenter();
+    position: relative;
+    background-color: colors.$white;
+    height: 11rem;
+    width: 13rem;
+    border-bottom: 8rem solid colors.$nitropink;
+    margin: 2%;
+    padding: 2%;
+    vertical-align: top;
+    border-radius: 10px;
+    box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+  }
+  &__card-description {
+    width: 10rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+
+  &__cards--img {
+    object-fit: contain;
+    height: 12rem;
+  }
+
+  &__cards__card-footer {
+    @include flexCenter();
+    position: absolute;
+    width: 100%;
+    bottom: -7.5rem;
+    left: 0;
+    justify-content: space-evenly;
+
+    &--p {
+      color: colors.$gray;
+      padding: 0;
+      margin: 0;
+    }
+    &--h3 {
+      font-size: 1.5rem;
+      font-weight: 300;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__button-div {
+    @include flexCenter();
+    padding: 3rem;
+  }
+}
+
+.tagline {
+  &-section {
+    background-color: colors.$white;
+    height: 55rem;
+    text-align: center;
+    &__tagline {
+      @include flexCenter();
+      justify-content: space-evenly;
+      gap: 10rem;
+      margin: 0;
+      padding: 5rem 0 0;
+    }
+  }
+  &--header {
+    margin: 0;
+  }
+  &--content-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 28rem;
+  }
+  &--paragraph {
+    text-align: left;
+  }
+
+  &__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1rem 0;
+    &--icon {
+      width: 3rem;
+      img {
+        width: 3rem;
+      }
+    }
+  }
+  &-image-container {
+    position: relative;
+  }
+
+  &__image--background-img {
+    @include flexCenter();
+    width: 20rem;
+    height: 20rem;
+    background-color: transparent;
+    border: 0.3rem solid colors.$nitroblue;
+    position: relative;
+    z-index: 1;
+    &-src {
+      width: 20rem;
+      height: 20rem;
+      background-image: url(../assets/images/coldbrewbackground.png);
+      background-position: center;
+      background-color: colors.$white;
+      background-size: cover;
+      position: absolute;
+      top: 1.5rem;
+      left: 1.5rem;
+      z-index: 0;
+    }
+  }
+  &__image--tilted-can {
+    width: 8rem;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.can-animation:hover {
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.tagline-section__promo-banner {
+  position: relative;
+  top: 10.5rem;
+  margin: auto;
+  background-color: colors.$graphite;
+  width: 70%;
+  min-width: 60rem;
+  font-size: 2.8125rem;
+  color: colors.$white;
+  text-align: center;
+  vertical-align: middle;
+  padding: 2rem 0;
+  &__statement {
+    margin: 0;
+    font-size: 2.4rem;
+  }
+  &__statement_code {
+    font-weight: 700;
+  }
+}
+
+@keyframes flash {
+  0% {
+    background-color: colors.$graphite;
+  }
+  50% {
+    background-color: colors.$nitroblue;
+  }
+  100% {
+    background-color: colors.$graphite;
+  }
+}
+
+.flashing-banner {
+  animation: flash 2.5s linear infinite;
+}
+
+
+
+
+/* Footer */
+
+.footer__address-info {
+  display: flex;
+  justify-content: space-around;
+  height: 18rem;
+  position: relative;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+.coffee-bean-splash--image1 {
+  width: 6rem;
+  height: 6rem;
+  background-image: url(../assets/logos/coffee-beans-logo-and-footer.svg);
+  background-position: center;
+  background-color: transparent;
+  background-size: cover;
+  position: absolute;
+  opacity: 0.3;
+  top: 1.5rem;
+  left: -1.5rem;
+  z-index: 0;
+}
+
+.coffee-bean-splash--image2 {
+  width: 6rem;
+  height: 6rem;
+  background-image: url(../assets/logos/coffee-beans-logo-and-footer.svg);
+  background-position: center;
+  background-color: transparent;
+  background-size: cover;
+  position: absolute;
+  opacity: 0.3;
+  top: 8.5rem;
+  right: -1.5rem;
+  z-index: 0;
+}
+
+
+
+.footer__footer-card--card1,
+.footer__footer-card--card2,
+.footer__footer-card--card3 {
+  height: 200px;
+  padding: 2%;
+  text-align: left;
+}
+
+.footer__footer-card--card1 p,
+.footer__footer-card--card2 p,
+.footer__footer-card--card3 p {
+  margin: 0;
+}
+
+.footer__Hours--days {
+  font-weight: 800;
+}
+
+.footer--header {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+img.social--icon {
+  margin-top: 0;
+  width: 3rem;
+}

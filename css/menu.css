@@ -1,0 +1,242 @@
+html {
+  font-size: 35px;
+  color: #393939;
+}
+
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  background-color: #393939;
+}
+
+.pink-banner {
+  background-color: #fff0ed;
+}
+
+.gray-banner {
+  background-color: #f7f7f7;
+}
+
+/* Top Site Navigation Bar */
+/* START */
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 5.5rem;
+}
+.site-nav--nitro {
+  display: flex;
+  flex-direction: row;
+}
+.site-nav--nitrosite-nav--nitro {
+  height: 7rem;
+}
+.site-nav__coffee-bean-logo--link {
+  padding: 0;
+  margin: 0;
+}
+.site-nav__coffee-bean-logo {
+  width: 3rem;
+  padding: 0.7rem 0 0 0.7rem;
+}
+.site-nav h2 {
+  margin: 0.4em 0;
+}
+
+.top-bar__home-button--h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 3.75rem;
+  font-weight: 300;
+}
+.top-bar__nav-links {
+  display: inline-block;
+  padding: 1.2rem;
+  color: #393939;
+  text-decoration: none;
+}
+.top-bar__nav-links:hover {
+  display: inline;
+  padding: 1.2rem;
+  color: #5bacc3;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.top-bar__home-button--link {
+  color: #393939;
+  font-size: 2.5rem;
+  width: 2rem;
+  text-decoration: none;
+}
+.top-bar__home-button--link:visited {
+  text-decoration: none;
+  color: #393939;
+  font-weight: 300;
+}
+.top-bar__home-button--link:hover {
+  color: #393939;
+  font-weight: 400;
+  letter-spacing: -0.1rem;
+  text-decoration: none;
+}
+
+/* Top Site Navigation Bar */
+/* END */
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.hero-bar--image-div {
+  background-image: url(../assets/images/coffee-circle.jpg);
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 31.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.hero-bar__menu-box {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-bar__menu-box--blue-box {
+  background-color: transparent;
+  width: 14.5rem;
+  height: 9.5rem;
+  border: 0.25rem solid #5bacc3;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.hero-bar__menu-box--menu {
+  color: #fff;
+  margin: 0;
+  font-size: 3.1rem;
+  font-weight: 300;
+}
+
+.hero-bar__menu-box--graphite-box {
+  background-color: #393939;
+  width: 14.5rem;
+  height: 9.5rem;
+  border: 0.25rem solid transparent;
+  position: absolute;
+  z-index: 0;
+  top: -4.2rem;
+  left: -6.7rem;
+}
+
+.hero-bar--image {
+  width: 100%;
+  height: 31.25rem;
+  padding: 0;
+  display: inline-block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+}
+
+.page-nav {
+  margin: 0;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  background-color: #393939;
+}
+
+.page-nav li {
+  list-style-type: none;
+}
+
+.page-nav a {
+  padding: 1rem;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+div.page-nav__separators {
+  display: inline;
+  height: 1.2rem;
+  width: 0.009rem;
+  border: 0.1rem solid #5bacc3;
+  background-color: #5bacc3;
+}
+
+.menu-card {
+  text-align: center;
+}
+
+.menu-card--drink-categories {
+  font-size: 3rem;
+  padding: 1.5rem 0 1.5rem;
+  font-weight: 300;
+}
+
+.menu-card--drink-subcategories {
+  font-weight: 300;
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.pinkCard {
+  background-color: #fff0ed;
+}
+
+.grayCard {
+  background-color: #f7f7f7;
+}
+
+.menu-card__drink-description-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+  margin: 0.5rem 0 0.3rem;
+  text-align: center;
+}
+
+.menu-card--drink-description {
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  width: 34%;
+}
+
+.menu-card--price {
+  color: #5bacc3;
+  text-align: center;
+  padding: 0 0 0.8rem 0;
+  margin: 0;
+}
+
+.menu-card--price:last-of-type {
+  padding-bottom: 2.5rem;
+}/*# sourceMappingURL=menu.css.map */
